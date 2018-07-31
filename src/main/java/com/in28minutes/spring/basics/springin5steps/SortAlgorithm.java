@@ -5,17 +5,11 @@
  */
 package com.in28minutes.spring.basics.springin5steps;
 
-import org.springframework.stereotype.Component;
 
 /**
  *
- * @author komyo
+ * @author Promptnow
  */
-@Component
-public class BubbleSortAlgorithm implements SortAlgorithm{
-
-    public int[] sort(int[] numbers) {
-
-        return numbers;
-    }
+interface SortAlgorithm {
+    public int[] sort(int[] numbers);
 }

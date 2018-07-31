@@ -11,8 +11,7 @@ import org.springframework.stereotype.Component;
  *
  * @author komyo
  */
-@Component
-public class BubbleSortAlgorithm implements SortAlgorithm{
+public class QuickSortAlgorithm implements SortAlgorithm {
 
     public int[] sort(int[] numbers) {
 
