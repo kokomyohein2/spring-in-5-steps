@@ -6,6 +6,7 @@
 package com.in28minutes.spring.basics.springin5steps;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 /**
@@ -16,9 +17,10 @@ import org.springframework.stereotype.Component;
 public class BinarySearchImpl {
 
     @Autowired
+    @Qualifier("bubble")
     private SortAlgorithm sortAlgorithm;
 
-    public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
+    public BinarySearchImpl(@Qualifier("quick") SortAlgorithm sortAlgorithm) {
         this.sortAlgorithm = sortAlgorithm;
     }
 
