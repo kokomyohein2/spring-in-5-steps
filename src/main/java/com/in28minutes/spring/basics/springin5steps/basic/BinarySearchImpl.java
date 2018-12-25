@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.in28minutes.spring.basics.springin5steps;
+package com.in28minutes.spring.basics.springin5steps.basic;
 
-import jdk.nashorn.internal.objects.annotations.ScriptClass;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -17,7 +16,7 @@ import org.springframework.stereotype.Component;
  * @author komyo
  */
 @Component
-@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class BinarySearchImpl {
 
     @Autowired
